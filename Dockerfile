@@ -11,4 +11,4 @@ RUN apt-get -qq update \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-RUN echo 'export PATH="$PATH:/root/.dotnet/tools"' >> ~/.bash_profile
+ENV PATH="$PATH:/root/.dotnet/tools"
