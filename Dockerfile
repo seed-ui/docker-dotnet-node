@@ -10,3 +10,5 @@ RUN apt-get -qq update \
     zip \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
+
+RUN echo 'export PATH="$PATH:/root/.dotnet/tools"' >> ~/.bashrc
